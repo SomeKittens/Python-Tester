@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Python Program Tester
+  p Welcome to Python Program Tester!
+  form#pyForm
+    textarea#pyCode(rows="20", cols="100")
+    br
+    button(type='submit') Submit
+  h3 Result:
+  div#result
