@@ -6,5 +6,7 @@ There's still a lot to do, you can help out by:
 
  - Making index.html look better (HCI)
  - Allow for user input to the code
- - Let the user create test cases.
+ - Let the user create test cases
  - Favicon?
+ - Get a name that doesn't sound like it was created by middle management
+ - Support both Python 2 and 3 (currently is only 3)
