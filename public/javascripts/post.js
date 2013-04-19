@@ -1,12 +1,27 @@
 !function() {
   'use strict';
   
-  $('#pyForm').submit(function(e) {
+  //Set up our syntax-highlighting goodness CodeMirror
+  var input = document.getElementById('pyCode');
+  var pyCode = CodeMirror.fromTextArea(input, {
+    value: 'print("hello world")',
+    mode: {
+      name: 'python',
+      version: 3,
+      singleLineStringErrors: false
+      },
+    lineNumbers: true,
+    lineWrapping: true
+  });
+  
+  //Set up POST form submission
+  $('#run').click(function(e) {
     $.post('/python', {
-      code: $('#pyCode').val()
+      code: pyCode.getValue(),
+      input: $('#pyInput').val()
     }, function(data) {
       console.log(data);
-      $('#result').text(data);
+      $('#results').text(data);
     });
     return false;
   });

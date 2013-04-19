@@ -1,11 +1,27 @@
-extends layout
-
-block content
-  h1 Python Program Tester
-  p Welcome to Python Program Tester!
-  form#pyForm
-    textarea#pyCode(rows="20", cols="100")
-    br
-    button(type='submit') Submit
-  h3 Result:
-  div#result
+doctype 5
+html
+  head
+    title Python Program Tester
+    link(rel='stylesheet', href='stylesheets/style.css')
+    link(rel='stylesheet', href='stylesheets/codemirror.css')
+  body
+    .title Python Program Tester
+    .content
+      span.content-title Program
+      .code
+        textarea#pyCode
+      button#run.content-btn Test it!
+    .content
+      span.content-title Results
+      #results.results-content
+      button#button.content-btn Button!
+    .footer
+      p Python Program Tester uses 
+        a(href="http://ideone.com") Ideone API 
+        &copy; by 
+        a(href="http://sphere-research.com") Sphere Research Labs
+  // One of the things jQuery *is* good for is RAD
+  script(src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+  script(src='javascripts/lib/codemirror.js')
+  script(src='javascripts/lib/python/python.js')
+  script(src='javascripts/post.js')

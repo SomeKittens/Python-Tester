@@ -31,6 +31,9 @@ module.exports = {
     
     //Code we're sending to ideone is the code that's posted
     ideoneArgs.create.sourceCode = req.body.code;
+    if(req.body.input) {
+      ideoneArgs.create.input = req.body.input;
+    }
     
     //Create our WSDL client
     soap.createClient(url, function(err, client) {

@@ -1,8 +1,91 @@
+/* Thanks to @the_great_rupert for the CSS */
+
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro:700);
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #474747 url(http://line25.com/wp-content/uploads/2009/letterpress/demo/bg.png);
+  padding-top: 12px;
+  font-family:"Advent Pro";
+}
+.title {
+  color: #222;
+  text-align: center;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  font-size: 2.6em;
+  text-transform: uppercase;
+  color: #222;
+  text-shadow: 0px 2px 3px #555;
+}
+.content .content-btn {
+  color:#999;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: Transparent;
+  border: 1px solid #666;
+  padding: 6px 24px;
+  cursor: pointer;
+  border-right: none;
+  border-bottom: none;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.content .content-btn:hover {
+  background-color: #282828;
+}
+.content .content-btn:active {
+  background-color: #333;
+}
+.content {
+  position: relative;
+  width: 700px;
+  padding: 2em;
+  margin: 1em auto;
+  background-color: #222;
+  border-radius: 12px;
+}
+h1 {
+  text-align: center;
+  margin: 0.5em auto;
+  letter-spacing: 0.15em;
+  font-family:"Advent Pro";
+  font-weight: 700;
+  font-size: 4.6em;
+  text-transform: uppercase;
+  color: #6d5669;
+    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
+}
+.cm-s-default {
+  background-color: #ddd;
+  border-radius: 12px;
+}
+.code, .results-content {
+  margin: 24px auto;
 }
 
-a {
-  color: #00B7FF;
+.content .content-title {
+  color:#aaa;
+  font-size: 24px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: Transparent;
+  border: 1px solid #444;
+  padding: 6px 24px;
+  cursor: pointer;
+  border-left: none;
+  border-top: none;
+  border-bottom-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.results-content {
+  color: #fff;
+  background-color: #000;
+  border-radius: 12px;
+  min-height: 64px;
+  padding-left: 7px;
+  padding-top: 5px;
+}
+.footer {
+  text-align:center;
 }
